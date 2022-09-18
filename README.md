@@ -7,4 +7,4 @@ Os dados foram retirados do site http://books.toscrape.com/, este é um site esp
 ### Execução da aquisição
 
 Para a execução é necessária a instalação das libs. A instalação se dá através do arquivo requirements.txt
-  Usando o comando -> pip install -r requirements.txt
+  * Usando o comando -> pip install -r requirements.txt
