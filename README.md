@@ -1,4 +1,4 @@
-# data_engineering_books
+# Practice Data Engineering
 
 Este projeto visa efetuar a prática de aquisição de dados via Scrapping. 
 
