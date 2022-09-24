@@ -132,4 +132,7 @@ dmypy.json
 \data
 
 # Logs
+\logs_webscrapping
 \logs
+\dags
+\plugins
