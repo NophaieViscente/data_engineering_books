@@ -135,3 +135,6 @@ dmypy.json
 \logs_webscrapping
 \logs
 \plugins
+
+# Postgres data
+*postgres-data/

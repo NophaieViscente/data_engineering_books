@@ -75,6 +75,7 @@ x-airflow-common:
       condition: service_healthy
 
 
+
 services:
 
   postgres:
@@ -90,6 +91,8 @@ services:
       interval: 5s
       retries: 5
     restart: always
+  
+
 
   redis:
     image: redis:latest
@@ -101,6 +104,7 @@ services:
       timeout: 30s
       retries: 50
     restart: always
+   
 
   airflow-webserver:
     <<: *airflow-common
@@ -131,6 +135,7 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    
 
   airflow-worker:
     <<: *airflow-common
@@ -282,7 +287,6 @@ services:
 volumes:
   postgres-db-volume:
 
-networks:
-  default:
-    external:
-      name: etl_network
+networks: 
+  postgres-compose-network:
+    driver: bridge
